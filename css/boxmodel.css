@@ -1,0 +1,12 @@
+.box {
+    padding: 20px;
+    /* Inner space between text and border */
+    border: 2px solid #000;
+    /* Border around the element */
+    margin: 30px;
+    /* Space outside the box */
+    background-color: rgb(139, 128, 240);
+    /* Custom background color */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
