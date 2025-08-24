@@ -27,6 +27,8 @@ console.log("Quotient: " + quotient);
 
 
 
+
+
 // Prompt user for their age
 let age = prompt("Please enter your age:");
 
