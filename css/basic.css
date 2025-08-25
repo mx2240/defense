@@ -30,6 +30,11 @@
      h1 {
          color: darkblue;
      }
+
+     p {
+         color: white;
+
+     }
  }
 
  /* Tablets (601px - 1024px) */
@@ -42,6 +47,14 @@
      h1 {
          color: darkgreen;
      }
+
+     p {
+         color: white;
+
+     }
+
+
+
  }
 
  /* Desktop Screens (1025px and up) */
