@@ -18,7 +18,7 @@
      height: 50px;
      display: flex;
      flex-wrap: wrap;
-     background-color: black;
+     background-color: rgb(159, 159, 226);
      flex-direction: row;
      justify-content: space-around;
      align-items: center;
