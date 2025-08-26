@@ -31,3 +31,30 @@ if (form) {
         form.reset(); // Clear form after submission
     });
 }
+
+
+
+
+
+// let send=document.getElementById('send')
+// let form= document.getElementById("form")
+
+
+// function sendData(event) {
+//     event.preventDefault();
+
+
+//     let formData = new  FormData(form)
+//     let getData= Object.fromEntries(formData.entries())
+
+//     console.log(getData)
+//     console.log(formData)
+//     console.log(getData.email)
+//     console.log(getData.password)
+//     console.log(getData.name)
+//    form.innerHTML  = login(getData.email,getData.password,getData.name)
+
+    
+    
+
+// }
