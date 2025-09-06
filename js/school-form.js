@@ -1,37 +1,32 @@
-const form = document.getElementById("contactForm");
-if (form) {
-    form.addEventListener("submit", function (e) {
-        e.preventDefault(); // prevent actual form submission
+const form = document.getElementById("feedbackForm");
 
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value.trim();
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form from refreshing the page
 
-        // Validate Name
-        if (name === "") {
-            alert("Name is required.");
-            return;
-        }
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-        // Validate Email
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            alert("Please enter a valid email address.");
-            return;
-        }
+    // Simple validation
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill out all fields.");
+        return;
+    }
 
-        // // Validate Password
-        if (password.length < 8) {
-            alert("Password must be at least 8 characters long.");
-            return;
-        }
+    // Check if email looks valid
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
 
+    // Success message
+    alert("Thank you for your feedback, " + name + "!");
 
-        // If all validations pass
-        alert("Form submitted!");
-        form.reset(); // Clear form after submission
-    });
-}
+    // Reset the form
+    form.reset();
+});
 
 
 
@@ -39,75 +34,3 @@ if (form) {
 
 
 
-
-
-
-
-
-
-// let send = document.getElementById('send')
-// let form = document.getElementById("form")
-
-
-// function sendData(event) {
-//     event.preventDefault();
-
-
-//     let formData = new FormData(form)
-//     let getData = Object.fromEntries(formData.entries())
-
-//     console.log(getData)
-//     console.log(formData)
-//     console.log(getData.email)
-//     console.log(getData.password)
-//     console.log(getData.name)
-//     form.innerHTML = login(getData.email, getData.password, getData.name)
-
-
-
-
-// }
-
-
-
-
-
-
-// send.addEventListener("click", sendData)
-
-
-
-
-
-
-
-
-// let register = document.getElementById('send')
-// let registercontainer = document.getElementById("registerform")
-
-
-// function register(event) {
-//     event.preventDefault();
-
-
-//     let formData = new FormData(form)
-//     let getData = Object.fromEntries(formData.entries())
-
-//     console.log(getData)
-//     console.log(formData)
-//     console.log(getData.email)
-//     console.log(getData.password)
-//     console.log(getData.name)
-//     form.innerHTML = register(getData.email, getData.password, getData.name)
-
-
-
-
-// }
-
-
-
-
-
-
-// send.addEventListener("click", sendData)

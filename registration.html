@@ -69,24 +69,22 @@
     <main>
         <section>
 
-            <h2> Register</h2>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
 
-            <form id="registerform">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
 
-                <label for="name">Name</label>
-                <input type="text" name="Name" id="name" required>
-                <label for="email"> Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="password"> password</label>
-                <input type="password" name="password" id="password" minlength="8">
-                <button type="submit" id="register">submit</button>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required minlength="8">
 
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
 
-
-
-
+                <button type="submit">Register</button>
             </form>
-
 
 
 
@@ -98,7 +96,7 @@
 
     <footer>&copy; 2025 Boanerges</footer>
 
-    <script src="js/school-form.js"></script>
+    <script src="js/rg.js"></script>
 
 
 </body>
