@@ -1,4 +1,4 @@
-const contact = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 if (form) {
     form.addEventListener("submit", function (e) {
         e.preventDefault(); // prevent actual form submission
@@ -20,7 +20,7 @@ if (form) {
             return;
         }
 
-        // Validate Password
+        // // Validate Password
         if (password.length < 8) {
             alert("Password must be at least 8 characters long.");
             return;
@@ -45,69 +45,69 @@ if (form) {
 
 
 
-let send = document.getElementById('send')
-let form = document.getElementById("form")
+// let send = document.getElementById('send')
+// let form = document.getElementById("form")
 
 
-function sendData(event) {
-    event.preventDefault();
+// function sendData(event) {
+//     event.preventDefault();
 
 
-    let formData = new FormData(form)
-    let getData = Object.fromEntries(formData.entries())
+//     let formData = new FormData(form)
+//     let getData = Object.fromEntries(formData.entries())
 
-    console.log(getData)
-    console.log(formData)
-    console.log(getData.email)
-    console.log(getData.password)
-    console.log(getData.name)
-    form.innerHTML = login(getData.email, getData.password, getData.name)
-
-
-
-
-}
+//     console.log(getData)
+//     console.log(formData)
+//     console.log(getData.email)
+//     console.log(getData.password)
+//     console.log(getData.name)
+//     form.innerHTML = login(getData.email, getData.password, getData.name)
 
 
 
 
-
-
-send.addEventListener("click", sendData)
+// }
 
 
 
 
 
 
-
-
-let register = document.getElementById('send')
-let registercontainer = document.getElementById("registerform")
-
-
-function register(event) {
-    event.preventDefault();
-
-
-    let formData = new FormData(form)
-    let getData = Object.fromEntries(formData.entries())
-
-    console.log(getData)
-    console.log(formData)
-    console.log(getData.email)
-    console.log(getData.password)
-    console.log(getData.name)
-    form.innerHTML = register(getData.email, getData.password, getData.name)
-
-
-
-
-}
+// send.addEventListener("click", sendData)
 
 
 
 
 
 
-send.addEventListener("click", sendData)
+
+
+// let register = document.getElementById('send')
+// let registercontainer = document.getElementById("registerform")
+
+
+// function register(event) {
+//     event.preventDefault();
+
+
+//     let formData = new FormData(form)
+//     let getData = Object.fromEntries(formData.entries())
+
+//     console.log(getData)
+//     console.log(formData)
+//     console.log(getData.email)
+//     console.log(getData.password)
+//     console.log(getData.name)
+//     form.innerHTML = register(getData.email, getData.password, getData.name)
+
+
+
+
+// }
+
+
+
+
+
+
+// send.addEventListener("click", sendData)
